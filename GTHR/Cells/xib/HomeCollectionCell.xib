@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="6Pm-El-5s8" customClass="HomeCollectionCell" customModule="GTHR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WX5-ZD-VWH">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEc-pK-abV">
+                        <rect key="frame" x="3" y="12" width="55" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZb-3k-Pgt">
+                                <rect key="frame" x="19.5" y="18.5" width="14.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YZb-3k-Pgt" firstAttribute="centerY" secondItem="EEc-pK-abV" secondAttribute="centerY" constant="0.75" id="YOD-4w-N1v"/>
+                            <constraint firstItem="YZb-3k-Pgt" firstAttribute="centerX" secondItem="EEc-pK-abV" secondAttribute="centerX" constant="-0.75" id="fzw-bs-9Nr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="EEc-pK-abV" secondAttribute="bottom" constant="13" id="dtm-NB-IkB"/>
+                    <constraint firstItem="EEc-pK-abV" firstAttribute="leading" secondItem="WX5-ZD-VWH" secondAttribute="leading" constant="3" id="o0B-0k-hW4"/>
+                    <constraint firstItem="EEc-pK-abV" firstAttribute="top" secondItem="WX5-ZD-VWH" secondAttribute="top" constant="12" id="umE-mV-XMl"/>
+                    <constraint firstAttribute="trailing" secondItem="EEc-pK-abV" secondAttribute="trailing" constant="2" id="wDp-fY-aoc"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="77" height="97"/>
+            <connections>
+                <outlet property="dayLabel" destination="YZb-3k-Pgt" id="B7G-o4-IGa"/>
+                <outlet property="innerView" destination="EEc-pK-abV" id="nfN-AJ-VqO"/>
+            </connections>
+            <point key="canvasLocation" x="-21.739130434782609" y="32.142857142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>
